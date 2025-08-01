@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="body.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logistica - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #e0e0e0, #ffffff);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    .hero p {
+      color: #666;
+    }
+
+    .flex-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .flex-box {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      flex: 1 1 250px;
+      padding: 20px;
+      max-width: 300px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .flex-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .flex-box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .flex-box h3 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .flex-box p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .description-section {
+      padding: 40px 20px;
+      background-color: #e9ecef;
+      text-align: center;
+    }
+
+    .description-section p {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .contact-form {
+      padding: 40px 20px;
+      background-color: #ffffff;
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #dee2e6;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    /* Effetto fade-in */
+    .fade-on-load {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar --> 
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="sito logistica.html">LogisticaPro</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="sito logistica.html">Homepage</a></li> 
+        <li class="nav-item"><a class="nav-link" href="chi_siamo.html">Chi siamo</a></li>
+        <li class="nav-item"><a class="nav-link" href="lavora_con_noi.html">Lavora con noi</a></li>
+        <li class="nav-item"><a class="nav-link" href="modulo_contatti.html">Modulo Contatti</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero section -->
+  <section class="hero fade-on-load">
+    <h1>Benvenuti in LogisticaPro</h1>
+    <p>Efficienza, precisione e passione al servizio della logistica moderna.</p>
+  </section>
+
+  <!-- Flexbox Logistica -->
+  <section class="flex-section fade-on-load">
+    <div class="flex-box">
+      <img src="delivery-goods-truck-logistics-in-city-vector-29257774.jpg" alt="Spedizioni veloci">
+      <h3>Spedizioni veloci</h3>
+      <p>Gestiamo migliaia di spedizioni ogni giorno con massima affidabilità.</p>
+    </div>
+    <div class="flex-box">
+      <img src="3d-isometric-automated-warehouse-robots-and-smart-warehouse-technology-concept-with-warehouse-automation-system-and-autonomous-robot-transportation-operation-service-illustration-eps-10-free-vector.jpg" alt="Magazzini smart">
+      <h3>Magazzini smart</h3>
+      <p>Infrastrutture moderne e automatizzate per una logistica senza intoppi.</p>
+    </div>
+    <div class="flex-box">
+      <img src="heavy-truck-cargo-trailer-container-logistic-delivery-service-illustration-vector.jpg" alt="Tracking avanzato">
+      <h3>Tracking avanzato</h3>
+      <p>Monitoraggio in tempo reale per garantire trasparenza ai nostri clienti.</p>
+    </div>
+  </section>
+
+  <!-- Sezione descrittiva -->
+  <section class="description-section fade-on-load">
+    <p>
+      In LogisticaPro crediamo nell'entusiasmo lavorativo, nella crescita continua e nella determinazione del nostro team.
+      Ogni giorno costruiamo insieme un servizio migliore per tutti.
+    </p>
+  </section>
+
+  <!-- Modulo contatti -->
+  <section id="modulo-contatti" class="contact-form fade-on-load">
+    <h2 class="text-center mb-4">Contattaci</h2>
+    <form>
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="messaggio" class="form-label">Messaggio</label>
+        <textarea class="form-control" id="messaggio" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Invia</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; Andrea Tavolozza 2025
+  </footer>
+
+  <!-- Script Bootstrap e animazioni -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".fade-on-load");
+      elements.forEach((el, i) => {
+        setTimeout(() => {
+          el.classList.add("fade-visible");
+        }, i * 250);
+      });
+    });
+  </script>
+</body>
+</html>
